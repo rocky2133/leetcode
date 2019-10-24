@@ -27,9 +27,6 @@ bool wordBreak(string s, vector<string>& wordDict) {
     			dp[i] = dp[i] || dp[i-nw];
     		}
     	}
-    	for(int i=0;i<=n;i++)
-    		cout<<dp[i]<<" ";
-    	cout<<endl;
     }
     return dp[n];
 }
