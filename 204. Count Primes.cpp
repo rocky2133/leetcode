@@ -16,7 +16,7 @@ int countPrimes(int n) {
     for(int i=2;i<n;i++){
     	if(!count[i])
     		cnt++;
-    	for(long long j=i*i;j<n;j+=i)
+    	for(long long j=(long long)(i)*i;j<n;j+=i)
     		count[j]=true;
     }
     return cnt;
