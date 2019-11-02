@@ -15,7 +15,7 @@ int findBottomLeftValue(TreeNode* root) {
     que.push(root);
     while(!que.empty()){
         int size = que.size();
-        ans=que.front();
+        ans=que.front()->val;
         while(size){
             TreeNode *temp = que.front();
             que.pop();
